@@ -3,25 +3,48 @@
     <title>WEB CSS</title>
     <meta charset="UTF-8">
     <style>
-        a{
-            color:rgb(255, 204, 0);
+        
+         
+        h2{
+            font-size:20px;
+            border-color: rgb(173, 27, 39);
+            display:inline;
          }
-         h1{
-            font-size:50px;
-            text-align:center
+         #grid{
+        display:grid;
+        grid-template-columns: 150px  1fr;
          }
+         #grid ol{
+            border-right: 1px rgb(14, 14, 14) solid;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+            color:rgb(123, 13, 19);
+         }
+        #article{
+            padding:10px;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+            border-bottom: rgb(8, 7, 7) 1px solid;
+            padding: 30px;
+            margin: 0px;
+            color:rgb(226, 113, 14)
+        }
+
      </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB STUDY</a></h1>
+<div id="grid">
     <ol>
         <li><a href ="1.html" target="-blank">HTML</a></li>
-        <li><a href="2.html" 
-            style="color:red ; text-decoration:underline">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="2.html"  target="-blank">CSS</a></li>
+        <li><a href="3.html"  target="-blank">JavaScript</a></li>
     </ol>
-
+    <div id="article">
     <h2>CSS 이해</h2>
     <p>종속형 시트 또는 캐스케이딩 스타일 시트(영어: Cascading Style Sheet)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(영어: Style sheet language 스타일 시트 랭귀지[*])로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다. 기본 파일명[2]은 style.css이다.
 
@@ -36,5 +59,49 @@
     <img src="cssstylecom.jpg" width="100%" style="margin-top: 50px;">
     <img src="fontsize.jpg" width="100%" style="margin-top: 50px;">
     <p>selector에 대한 속성(크기, 배열)기입방법</p>
+    <img src="cssdecoration.jpg" width="100%" style="margin-top: 50px;">
+    <p>text-decoration -> 지정된 문장의 선 표식 장식</p>
+    <img src="classcss.jpg" width="100%" style="margin-top: 50px;">
+    <p>class 및 class 하위 그룹 설정 및 지정 예> .saw or .active 지정하여 css 값 처리</p>
+    <img src="idclass.jpg" width="100%" style="margin-top: 50px;">
+    <p>명령어 선택 우선순위 id>class>tag.<br> 일반적 상황에서는 명령어는 나중에 나오는 순서대로 처리됨.<br>
+    id는 전체에서 code에서 단 한번만 나오게 해야 함.</p>
+    <br>
+    <h2>BOX</h2>
+    <p>
+    먼저 block (level element) : 그 줄의 처음부터 끝까지의 영역 확보<br>
+    inline (element) : 설정된 글자가 있는 크기만큼의 영역<br>
+    display(콘론) inline or block (으로 설정) (세미콘론)<br>
+    display(콘론) none (세미콘론) ; 보이지 않게 처리됨<br>
+    </p>
+         <br>
+    <p>border~박스의 테두리</p>
+    <img src="boxborder.jpg" width="100%" style="margin-top: 50px;">
+    <p>border(콘론) 각종 속성 값 (세미콘론) 나열하여 연속 처리 가능<br>
+    pabbing 글자와 보드(선) 사이의 간격<br>
+    margin 테두리 바깥의 다른 인자와의 간격<br>
+    width로 박스의 가로 크기 설정<br>
+    </p>
+    <img src="boxform.jpg" width="100%" style="margin-top: 50px;">
+    <img src="boxbottom.jpg" width="100%" style="margin-top: 50px;">
+    <p>밑줄 형식으로 만들기는 border-bottom으로 설정</p>
+    <img src="boxrightline.jpg" width="100%" style="margin-top: 50px;">
+    <p>박스형에서 오른쪽 라인만 나타나게 코딩하기</p>
+    <img src="boxside.jpg" width="100%" style="margin-top: 50px;">
+    <p>박스내부 공간의 조정을 위해, padding, margin 값을 부여하여 조정</p>
+    <br>
+    <h2>Grid의 이해</h2>
+    <img src="div.jpg" width="100%" style="margin-top: 50px;">
+    <p>원하는 영역의 분할을 위한 태그 div(division)이용 block level element<br>
+    span은 inline element임 </p>
+    <img src="divsize.jpg" width="100%" style="margin-top: 50px;">
+    <img src="gridcolum.jpg" width="100%" style="margin-top: 50px;">
+    <p>원하는 영역을 묶어 영역을 길쭉하게 나누어 배치하려 할때<br>
+       display: grid;<br>
+       grid-template-colums: 값. 값<br>
+       fr은 fractional의 약자로 분할 영역을 나타냄</p>
 
-    </body>
+    <img src="gridleyout.jpg" width="100%" style="margin-top: 50px;">   
+    </div>     
+</div> 
+</body>
